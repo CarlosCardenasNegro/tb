@@ -1,0 +1,30 @@
+{
+    "name": "tb",
+    "description": "Probando diversos MVC de varios autores para configurar uno propio.",
+    "license": "MIT",
+    "homepage": "http://www.nuimsa.es",
+    "keywords": ["test", "pruebas", "MVC", "no lo se"],
+    "authors": [
+    	{
+    		"name": "Carlos Cñardenas Negro",
+    		"email": "carloscardenasnegro@gmail.com"
+    	}
+    ],
+    "autoload": {
+        "psr-4": {
+            "tb\\src\\controllers\\": "src/Controllers/",
+            "tb\\src\\models\\": "src/Models/",
+            "tb\\src\\views\\": "src/Views/",
+            "tb\\src\\viewmodels\\": "src/ViewModels/",
+            "tb\\core\\": "Core/",
+            "tb\\core\\interfaces\\": "Core/interfaces/",
+            "user\\create\\": "src/Views/user/create/"
+        }
+    },
+    "require-dev": {
+        "psr/http-message": "dev-master",
+        "level-2/dice": "dev-master",
+        "zendframework/zend-diactoros": "dev-master",
+        "level-2/router-modulejson": "dev-master"
+    }
+}
